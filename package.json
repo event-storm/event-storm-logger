@@ -7,7 +7,7 @@
     "bundle": "rollup -c",
     "lint": "eslint src/*.js",
     "build": "rimraf ./dist && npm run bundle",
-    "dispatch-lib": "npm run build && cd dist && npm dispatch"
+    "dispatch-lib": "npm run build && cd dist && npm publish"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
