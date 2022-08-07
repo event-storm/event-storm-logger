@@ -1,4 +1,4 @@
-name: dispatch
+name: Publish
 on:
   workflow_dispatch:
   push:
@@ -18,9 +18,9 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Linting
-        run: yarn run lint
+        run: npm run lint
       - name: Generate changelog
         id: changelog
         uses: TriPSs/conventional-changelog-action@v2
@@ -31,7 +31,7 @@ jobs:
           release-count: '0'
           package-json: './package.json'
       - name: dispatch to npm
-        run: yarn run dispatch-lib
+        run: npm run dispatch-lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create release

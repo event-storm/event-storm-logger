@@ -14,8 +14,8 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Linting
-        run: yarn run lint
+        run: npm run lint
       - uses: actions/checkout@v1
       - uses: ArtiomTr/jest-coverage-report-action@v2
