@@ -6,8 +6,8 @@
   "scripts": {
     "bundle": "rollup -c",
     "lint": "eslint src/*.js",
-    "build": "rimraf ./dist && npm run bundle",
-    "dispatch-lib": "npm run build && cd dist && npm dispatch"
+    "build": "rimraf ./dist && yarn run bundle",
+    "dispatch-lib": "yarn run build && cd dist && yarn dispatch"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -54,7 +54,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint"
+      "yarn run lint"
     ]
   },
   "husky": {
