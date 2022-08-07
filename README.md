@@ -1,6 +1,6 @@
 [![publish](https://github.com/event-storm/event-storm-logger/actions/workflows/publish.yml/badge.svg)](https://github.com/event-storm/event-storm-logger/actions/workflows/publish.yml)
-# event-storm-logger
-Simpler logger of event storm. Any updates will be visible in the console
+# Event Storm logger
+Simple logger of event storm. Any updates will be visible in the console
 
 ## Usage Example
 Note: use the logger for development purposes
@@ -14,6 +14,6 @@ process.env.NODE_ENV === 'development' && log(storm);
 ```
 
 The output will look like this:
-![Event storm log output example](https://github.com/event-storm/event-storm-logger/tree/main/images/output.png?raw=true)
+![Event storm log output example](https://github.com/event-storm/event-storm-logger/blob/main/images/output.png?raw=true)
 
 Happy hacking :paw_prints:.
