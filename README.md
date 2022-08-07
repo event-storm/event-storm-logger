@@ -14,6 +14,6 @@ process.env.NODE_ENV === 'development' && log(storm);
 ```
 
 The output will look like this:
-![Event storm log output example](https://github.com/event-storm/event-storm-logger/blob/main/images/output.png?raw=true)
+![Event storm log output example](https://github.com/event-storm/event-storm-logger/blob/main/images/log-example.png?raw=true)
 
 Happy hacking :paw_prints:.
