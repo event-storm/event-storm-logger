@@ -1,3 +1,7 @@
+## [1.1.7](https://github.com/event-storm/event-storm-logger/compare/v1.1.6...v1.1.7) (2022-08-07)
+
+
+
 ## [1.1.6](https://github.com/event-storm/event-storm-logger/compare/v1.1.5...v1.1.6) (2022-08-07)
 
 
