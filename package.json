@@ -1,0 +1,67 @@
+{
+  "name": "event-storm-logger",
+  "version": "1.0.0",
+  "description": "Simpler logger of event storm. Any updates will be visible in the console",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "rollup -c",
+    "lint": "eslint src/*.js",
+    "build": "rimraf ./dist && yarn run bundle",
+    "dispatch-lib": "yarn run build && cd dist && yarn dispatch"
+  },
+
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "babel-jest": "^26.6.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.18.0",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.38.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "peerDependencies": {
+    "event-storm": "^3.0.0"
+  },
+  "dependencies": {
+    "deep-object-diff": "^1.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/event-storm/event-storm-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "event",
+    "storm"
+  ],
+  "author": "artur93gev",
+  "license": "MIT",
+  "homepage": "https://github.com/event-storm/event-storm-logger#readme",
+  "bugs": {
+    "url": "https://github.com/event-storm/event-storm-logger/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+}

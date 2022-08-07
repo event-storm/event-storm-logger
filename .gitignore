@@ -1,0 +1,12 @@
+# packages
+node_modules
+
+# build
+dist
+
+# package manager logs
+yarn-error.log
+
+# idea, editor
+.DS_Store
+
