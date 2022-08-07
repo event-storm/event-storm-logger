@@ -1,5 +1,5 @@
 [![publish](https://github.com/event-storm/event-storm-logger/actions/workflows/publish.yml/badge.svg)](https://github.com/event-storm/event-storm-logger/actions/workflows/publish.yml)
-# event-storm-logger
+# Event Storm logger
 Simple logger of event storm. Any updates will be visible in the console
 
 ## Usage Example
