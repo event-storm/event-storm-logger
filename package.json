@@ -1,6 +1,6 @@
 {
   "name": "event-storm-logger",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Simpler logger of event storm. Any updates will be visible in the console",
   "main": "index.js",
   "scripts": {
