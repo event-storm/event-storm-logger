@@ -1,3 +1,12 @@
+## [1.1.9](https://github.com/event-storm/event-storm-logger/compare/v1.1.8...v1.1.9) (2022-10-30)
+
+
+### Bug Fixes
+
+* **dependencies:** peer deps version changed ([acdb38e](https://github.com/event-storm/event-storm-logger/commit/acdb38e7ac44c3e4686f065bd52983441457107c))
+
+
+
 ## [1.1.8](https://github.com/event-storm/event-storm-logger/compare/v1.1.7...v1.1.8) (2022-08-07)
 
 
